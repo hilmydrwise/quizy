@@ -1,0 +1,115 @@
+<!--Kelompok 6
+Nama = Muhammad Hilmy Darwisy
+NIM  = 230401010291
+
+Nama = Setia Surya Nugraha
+NIM  = 230401010366
+
+Nama = Niken Ardity Bilqhis
+NIM  = 230401010264
+
+Kelas = IT205 - Pemograman Web I -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizy!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/quiz_5678190.png" type="image/x-icon">
+</head>
+<body onclick="play()">
+    <main class="main">
+        <video autoplay muted loop id="bgVideo">
+            <source src="assets/bg-techVid.mp4" type="video/mp4">
+        </video>
+        <header class="header">
+            <a href="index.html" class="logo">Quizy!</a>
+
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Tech Quiz</h1>
+                    <div class="quiz-header">
+                        <span>Kuis Tentang Teknologi</span>
+                        <span class="header-score">Score: 0 / 5</span>
+                    </div>
+                    <h2 class="question-text">Apa nama teknologi yang memungkinkan pengisian daya perangkat elektronik secara nirkabel dalam jarak beberapa meter?</h2>
+                    <div class="option-list">
+                        <!-- <div class="option">
+                            <span>A. NFC Charging</span>
+                        </div>
+                        <div class="option">
+                            <span>B. Wireless Inductive Charging</span>
+                        </div>
+                        <div class="option">
+                            <span>C. Wi-Charge</span>
+                        </div>
+                        <div class="option">
+                            <span>D. Bluetooth Charging</span>
+                        </div> -->
+                    </div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total">1 of 5 Questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <h2>Quiz Result!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <span class="score-text">Score kamu 0 dari 5</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="tryAgain-btn">Try Again</button>
+                        <button class="goHome-btn">Back To Home</button>
+                    </div>
+                </div>
+            </section>
+            <section class="home">
+                <div class="home-content">
+                    <h1>Welcome to Quizy!</h1>
+                    <p>Sebuah website kuis online bertemakan teknologi yang lagi trending saat ini. Pilih jawaban
+                    dari beberapa pertanyaan di Quizy lalu dapatkan langsung hasilnya. Bagaimana, apakah Eazy?</p>
+                    <button class="start-btn">Start Quiz</button>
+                    <audio loop id="audio">
+                        <source src="assets/Odd Banker - Orch Compression CHROMA X.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <div class="popup-info">
+        <h2>Petunjuk Kuis</h2>
+        <span class="info">1. Terdapat 5 pertanyaan yang harus dijawab.</span>
+        <span class="info">2. Jawaban tersedia berupa pilihan ganda.</span>
+        <span class="info">3. Pertanyaan akan diberikan berurutan.</span>
+        <span class="info">4. Ada tanda pada jawaban benar dan salah.</span>
+        <span class="info">5. Tekan "Continue" jika kamu sudah siap, Good Luck!</span>
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Quizy | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
